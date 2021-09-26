@@ -48,7 +48,7 @@ jobs:
           RECORD_DOMAIN: "switchswap.io"
           RECORD_NAME: "_dnslink"
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        id: dnslink
+        id: dnslink_sw
         uses: textileio/cloudflare-update-dnslink@v2
         with:
           cid: ${{ steps.pinIpfs.outputs.hash }}
@@ -59,7 +59,7 @@ jobs:
           RECORD_DOMAIN: "switchswap.finance"
           RECORD_NAME: "_dnslink"
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_SWF }}
-        id: dnslink
+        id: dnslink_swf
         uses: textileio/cloudflare-update-dnslink@v2
         with:
           cid: ${{ steps.pinIpfs.outputs.hash }}
