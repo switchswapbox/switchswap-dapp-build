@@ -78,4 +78,3 @@ jobs:
             - https://ipfs.infura.io/ipfs/${{ steps.pinIpfs.outputs.hash }}/
 
             Visit the [IPFS Gateway Checker](https://ipfs.github.io/public-gateway-checker/) for a complete list of gateways available.
-1
